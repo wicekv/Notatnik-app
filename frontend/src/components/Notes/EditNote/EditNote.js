@@ -19,7 +19,7 @@ export default function EditNote(props) {
         const note = {
             title: title,
             body: desc,
-            id: props.id
+            _id: props.id
         }
         props.onEdit(note);
     }
@@ -32,7 +32,7 @@ export default function EditNote(props) {
             onChange={changeTitleHandler}/>
 
             <label>Opis:</label>
-            <input type = "text" v
+            <input type = "text" 
             value={desc}
             onChange={changeDescHandler}
             />
